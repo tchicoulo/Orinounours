@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Orinoco shop</title>
+    <link rel="stylesheet" type="text/css" href="./public/css/style.css" />
+
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header class="header">
+      <a href="./index.html">
+        <img
+          src="./images/orinoco.png"
+          alt="Retour à la page principale"
+          class="logo"
+        />
+      </a>
+      <a class="cart" href="./panier.html">
+        <i class="fas fa-shopping-bag fa-2x"></i><span class="cart-numbers">0</span>
+      </a>
+    </header>
+    <main>
+      <h1 class= "cart-title-page">Votre panier</h1>
+
+      <article class="cart-container">
+        <div class="cart-header">
+          <h6 class="cart-header__title">ARTICLE</h6>
+          <h6 class="cart-header__price">PRIX</h6>
+          <h6 class="cart-header__color">COULEUR</h6>
+          <h6 class="cart-header__quantity">QUANTITE</h6>
+          <h6 class="cart-header__total">TOTAL</h6>
+        </div>
+        <div class="cart-products"></div>
+      </article>
+
+      <div class="form-heading">
+        <h2>Souhaitez-vous enregistrer votre commande ?</h2>
+        <h4>
+        Veuillez renseigner les informations demandées dans le formulaire
+        ci-dessous
+        </h4>
+      </div>
+
+      <form class="form-contact" action="" method="post">
+        <div>
+          <label for="first-name">Prénom :</label>
+          <input type="text" id="first-name" name="user_first_name" />
+        </div>
+        <div>
+          <label for="name">Nom :</label>
+          <input type="text" id="name" name="user_name" />
+        </div>
+        <div>
+          <label for="address">Adresse :</label>
+          <input type="text" id="address" name="address" />
+        </div>
+        <div>
+          <label for="city">ville :</label>
+          <input type="text" id="city" name="city" />
+        </div>
+        <label for="mail">Adresse électronique :</label>
+        <input type="email" id="mail" name="user_mail" />
+        <div>
+          <input class="btn-submit" type="submit" value="Enregistrer" />
+        </div>
+      </form>
+    </main>
+
+    <footer>
+      <small>Open Classroom Projet 5 Développeur Web</small>
+    </footer>
+
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/ea3663f630.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./public/js/panier.js"></script>
+    <script src="./public/js/script-onload.js"></script>
+  </body>
+</html>
