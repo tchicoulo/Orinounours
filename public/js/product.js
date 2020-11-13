@@ -98,7 +98,7 @@ function addToCart(product) {
       cartNumbers(product);
       totalCost(product);
     } else {
-      alert("veuillez sélectionner une couleur");
+      alert("Veuillez sélectionner une couleur");
     }
   });
 }

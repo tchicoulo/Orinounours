@@ -69,7 +69,7 @@ function deleteProduct() {
   let clearCart = document.querySelector('.clear-cart');
 
   clearCart.addEventListener('click', function() {
-    alert('Votre panier à été annulé \n retour à la page d\'acceuil');
+    alert('Votre panier à été annulé ! \n Retour à la page d\'acceuil');
     localStorage.clear();
     window.location = "./index.html";
   })
